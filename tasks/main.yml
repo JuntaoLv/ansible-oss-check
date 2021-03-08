@@ -1,0 +1,39 @@
+---
+# tasks file for ansible-oss-check
+
+#- name: "Set Vm name"
+#  set_fact:
+#    vm_name: "{{ item.vm }}" 
+
+#- name: "{{ item }}"
+#  debug:
+#    msg: "{{ osslist_item.vm }}"
+#    msg: "{{ vm_name }} {{ item.name }}"
+#  with_items: "{{ item.file }}"
+
+- name: "Copy oss check script to /tmp"
+  copy: 
+    src: oss_check_{{ check_type }}.sh
+    dest: /tmp/oss_check_{{ check_type }}.sh
+    mode: '0755'
+
+- name: "Exec oss check script"
+  shell:
+       sh /tmp/oss_check_{{ check_type }}.sh /root/ossutil64 "{{ osslist_item.vm }}"  "{{ item.name }}"
+  loop: "{{ osslist_item.file }}"
+  register: osscheck_report
+
+- name: Fail if return code is not 0
+  debug:
+    msg: "{{ item.stdout.split('\n') }}"
+  loop: "{{ osscheck_report.results }}"
+
+#- name: "Printing Out All results"
+#  vars:
+#    msg: |
+#     {{ osscheck_report }}
+     #{{ osscheck_report.stdout }}
+#  debug:
+#    msg: "{{ msg.split('\n') }}"
+#  loop: "{{ osscheck_report.results }}"
+

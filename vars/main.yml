@@ -1,0 +1,261 @@
+---
+# vars file for ansible-oss-check
+{
+        "osslist": [{
+                        "vm": "elcserver144",
+                        "file": [{
+                                        "id": "1",
+                                        "name": "CRM_Backup"
+                                },
+                                {
+                                        "id": "2",
+                                        "name": "Datamapping"
+                                },
+                                {
+                                        "id": "3",
+                                        "name": "Datapulling"
+                                }
+                        ]
+                },
+                {
+                        "vm": "elcserver145",
+                        "file": [{
+                                        "id": "1",
+                                        "name": "CEP"
+                                },
+                                {
+                                        "id": "2",
+                                        "name": "CRM"
+                                },
+                                {
+                                        "id": "3",
+                                        "name": "Enhancement"
+                                },
+                                {
+                                        "id": "4",
+                                        "name": "Enhancement_Test"
+                                },
+                                {
+                                        "id": "5",
+                                        "name": "INC_DTS"
+                                },
+                                {
+                                        "id": "6",
+                                        "name": "TempData"
+                                }
+                        ]
+                },
+                {
+                        "vm": "elcserver147",
+                        "file": [{
+                                        "id": "1",
+                                        "name": "BB"
+                                },
+                                {
+                                        "id": "2",
+                                        "name": "BB_ReadOnly"
+                                },
+                                {
+                                        "id": "3",
+                                        "name": "CL"
+                                },
+                                {
+                                        "id": "4",
+                                        "name": "CL_ReadOnly"
+                                },
+                                {
+                                        "id": "5",
+                                        "name": "CM"
+                                },
+                                {
+                                        "id": "6",
+                                        "name": "CM_ReadOnly"
+                                },
+                                {
+                                        "id": "7",
+                                        "name": "CORP"
+                                },
+                                {
+                                        "id": "8",
+                                        "name": "CORP_ReadOnly"
+                                },
+                                {
+                                        "id": "9",
+                                        "name": "CRM"
+                                },
+                                {
+                                        "id": "10",
+                                        "name": "DAP"
+                                },
+                                {
+                                        "id": "11",
+                                        "name": "DAP_ReadOnly"
+                                },
+                                {
+                                        "id": "12",
+                                        "name": "EL"
+                                },
+                                {
+                                        "id": "13",
+                                        "name": "ELC_Campaign"
+                                },
+                                {
+                                        "id": "14",
+                                        "name": "ELC_ManualCampaign"
+                                },
+                                {
+                                        "id": "15",
+                                        "name": "EL_ReadOnly"
+                                },
+                                {
+                                        "id": "16",
+                                        "name": "FM"
+                                },
+                                {
+                                        "id": "17",
+                                        "name": "FM_ReadOnly"
+                                },
+                                {
+                                        "id": "18",
+                                        "name": "JM"
+                                },
+                                {
+                                        "id": "19",
+                                        "name": "JM_ReadOnly"
+                                },
+                                {
+                                        "id": "20",
+                                        "name": "KL"
+                                },
+                                {
+                                        "id": "21",
+                                        "name": "KL_ReadOnly"
+                                },
+                                {
+                                        "id": "22",
+                                        "name": "LaMer_Pad"
+                                },
+                                {
+                                        "id": "23",
+                                        "name": "MC"
+                                },
+                                {
+                                        "id": "24",
+                                        "name": "MC_ReadOnly"
+                                },
+                                {
+                                        "id": "25",
+                                        "name": "OR"
+                                },
+                                {
+                                        "id": "26",
+                                        "name": "OR_ReadOnly"
+                                },
+                                {
+                                        "id": "27",
+                                        "name": "TF"
+                                },
+                                {
+                                        "id": "28",
+                                        "name": "TF_ReadOnly"
+                                }
+                        ]
+                },
+                {
+                        "vm": "elcserver200",
+                        "file": [{
+                                        "id": "1",
+                                        "name": "ELCReport_BI"
+                                },
+                                {
+                                        "id": "2",
+                                        "name": "ELC_Campaign"
+                                },
+                                {
+                                        "id": "3",
+                                        "name": "ELC_ManualCampaign"
+                                },
+                                {
+                                        "id": "4",
+                                        "name": "LaMer_Pad"
+                                },
+                                {
+                                        "id": "5",
+                                        "name": "crm"
+                                }
+                        ]
+                },
+                {
+                        "vm": "elcserver201",
+                        "file": [{
+                                        "id": "1",
+                                        "name": "DTS"
+                                },
+                                {
+                                        "id": "2",
+                                        "name": "INC_DTS"
+                                }
+                        ]
+                },
+                {
+                        "vm": "elcserver204",
+                        "file": [{
+                                        "id": "1",
+                                        "name": "CounterPortal"
+                                },
+                                {
+                                        "id": "2",
+                                        "name": "ODS"
+                                }
+                        ]
+                },
+                {
+                        "vm": "elcserver206",
+                        "file": [{
+                                        "id": "1",
+                                        "name": "CEPInterface"
+                                },
+                                {
+                                        "id": "2",
+                                        "name": "CRM"
+                                },
+                                {
+                                        "id": "3",
+                                        "name": "CRM_Test"
+                                },
+                                {
+                                        "id": "4",
+                                        "name": "CampaignHistoryBackup145"
+                                },
+                                {
+                                        "id": "5",
+                                        "name": "CounterPortal"
+                                },
+                                {
+                                        "id": "6",
+                                        "name": "DTS"
+                                },
+                                {
+                                        "id": "7",
+                                        "name": "Enhancement"
+                                },
+                                {
+                                        "id": "8",
+                                        "name": "INC_DTS"
+                                },
+                                {
+                                        "id": "9",
+                                        "name": "ODS"
+                                },
+                                {
+                                        "id": "10",
+                                        "name": "datamapping"
+                                },
+                                {
+                                        "id": "11",
+                                        "name": "datapulling"
+                                }
+                        ]
+                }
+        ]
+}
